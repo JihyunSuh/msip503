@@ -1,0 +1,581 @@
+:root {
+  --white: #FFFFFF;
+/* Brights */
+  --vibrant-red: #EE3130;
+  --orange: #EB6F1B;
+  --warm-yellow: #EBA411;
+  --vc-green: #093323;
+  --dark-green: #004D27;
+  --mid-green: #4A7729;
+  --acid-green: #B0AE24;
+  --dark-blue: #002B4A;
+  --mid-blue: #00508C;
+  --light-blue: #8CBAD4;
+  --mauve-blue: #3A5DAE;
+/* Neutrals */
+  --dark-warm-grey: #706359;
+  --mid-warm-grey: #ACA6A2;
+  --light-warm-grey: #D4D0CA;
+  --black: #231F20;
+  --mid-cool-grey: #73808A;
+  --light-cool-grey: #C6C7C9;
+  --digi-gold: #B49243;
+  --light-digi-gold: #C8B182;
+/* CMYK Pop Process */
+  --magenta: #EC008C;
+  --bright-yellow: #FFF200;
+  --cyan: #00AEEF;
+  --royal-blue: #2E3192;
+/* Metallic Finish */
+  --metallic-gold: #85714D;
+  --metallic-gold-70p: #C7B99E;
+  --metallic-silver: #8A8D8F;
+  --metallic-silver-70p: #B1B3B4;
+}
+
+:root{
+  --size-tiny: 15px;
+  --size-scriptsize: 18px;
+  --size-footnotesize: 18px;
+  --size-small: 18px;
+  --size-normalsize: 22px;
+  --size-large: 26px;
+  --size-Large: 32px;
+  --size-LARGE: 38px;
+  --size-huge: 46px;
+  --size-Huge: 46px;
+/* New size for list of reference: halfway through tiny and small */
+  --size-references: 17px;
+}
+
+.remark-slide-content {
+  background-color: #FAFAFA;
+  border-top: 60px solid #66665c;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
+}
+
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+.content-box { 
+    box-sizing: content-box;
+    	background-color: #e2e2e2;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+/* Various left and right split columns*/
+
+.pull-left-70 { float: left; width: 66.5%; }
+.pull-right-30 { float: right; width: 28.5%; }
+.pull-right-30 + * { clear: both; }
+
+.pull-left-60 { float: left; width: 57%; }
+.pull-right-40 { float: right; width: 38%; }
+.pull-right-40 + * { clear: both; }
+
+.pull-left-50 { float: left; width: 47.5%; }
+.pull-right-50 { float: right; width: 47.5%; }
+.pull-right-50 + * { clear: both; }
+
+.pull-left-40 { float: left; width: 38%; }
+.pull-right-60 { float: right; width: 57%; }
+.pull-right-60 + * { clear: both; }
+
+.pull-left-30 { float: left; width: 28.5%; }
+.pull-right-70 { float: right; width: 66.5%; }
+.pull-right-70 + * { clear: both; }
+
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    border-radius: 15px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
+}
+
+.title-slide .inverse .remark-slide-content {
+  background-color: #FAFAFA;
+}
+
+
+
+.inverse {
+  background-color: #66665c;
+  text-shadow: none;
+}
+
+/* Removes colored bar from top of the slide resulting in a clear slide */
+.clear{
+  border-top: 0px solid #FAFAFA;
+}
+
+
+h1 {
+  font-weight: normal;
+  margin-top: -85px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
+
+h2, h3, h4 {
+  padding-top: -15px;
+  padding-bottom: 00px;
+  color: #30302c;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 00px;
+  margin-bottom: -10px;
+}
+
+.remark-slide-content h1 {
+  font-size: 45px;
+}
+
+.remark-slide-content h2 {
+  font-size:35px;
+}
+
+.remark-slide-content h3 {
+  font-size: 25px;
+}
+
+.left-column h2, .left-column h3, .left-column h4 {
+  color: #777;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #30302c;
+}
+
+.title-slide {
+  background-color: #FAFAFA;
+  border-top: 60px solid #FAFAFA;
+}
+
+.title-slide h1  {
+  color: #30302c;
+  font-size: 40px;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 60px;
+}
+.title-slide h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: #30302c;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 15px;
+}
+.title-slide h3  {
+  color: #30302c;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+hr, .title-slide h2::after, .mline h1::after {
+  content: '';
+  display: block;
+  border: none;
+  background-color: #c80150;
+  color: #c80150;
+  height: 1px;
+}
+
+hr, .mline h1::after {
+  margin: 1em 15px 0 15px;
+}
+
+.title-slide h2::after {
+  margin: 10px 15px 35px 0;
+}
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://raw.githubusercontent.com/JihyunSuh/postech_theme/a77ebf56d6824ebfa8794ddbfca2588654815aa0/logo.jpg);
+  background-position: 9% 5%;
+  background-size: 200px;
+}
+
+.mline h1::after {
+  margin: 10px 15px 0 15px;
+}
+
+.remark-slide-number {
+  font-size: 13pt;
+  color: #272822;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-size: 13pt;
+  color: #FAFAFA;
+  opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.remark-inline-code {
+  /* background: #F5F5F5; /* lighter */
+  background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
+}
+
+
+
+.code10 .remark-code {
+  font-size: 10%;
+}
+
+.code20 .remark-code {
+  font-size: 20%;
+}
+
+.code30 .remark-code {
+  font-size: 30%;
+}
+
+.code40 .remark-code {
+  font-size: 40%;
+}
+
+.code50 .remark-code {
+  font-size: 50%;
+}
+
+.code60 .remark-code {
+  font-size: 60%;
+}
+
+.code70 .remark-code {
+  font-size: 70%;
+}
+
+.code80 .remark-code {
+  font-size: 80%;
+}
+
+.code90 .remark-code {
+  font-size: 90%;
+}
+
+.code100 .remark-code {
+  font-size: 100%;
+}
+
+.code110 .remark-code {
+  font-size: 110%;
+}
+
+.code120 .remark-code {
+  font-size: 120%;
+}
+.font10 {
+  font-size: 10%;
+}
+
+.font20 {
+  font-size: 20%;
+}
+
+.font30 {
+  font-size: 30%;
+}
+
+.font40 {
+  font-size: 40%;
+}
+
+.font50 {
+  font-size: 50%;
+}
+
+.font60 {
+  font-size: 60%;
+}
+
+.font70 {
+  font-size: 70%;
+}
+
+.font80 {
+  font-size: 80%;
+}
+
+.font90 {
+  font-size: 90%;
+}
+
+.font100 {
+  font-size: 100%;
+}
+
+.font110 {
+  font-size: 110%;
+}
+
+.font120 {
+  font-size: 120%;
+}
+
+.font130 {
+  font-size: 130%;
+}
+
+.font140 {
+  font-size: 140%;
+}
+
+.font150 {
+  font-size: 150%;
+}
+
+.font160 {
+  font-size: 160%;
+}
+.font170 {
+  font-size: 170%;
+}
+.font180 {
+  font-size: 180%;
+}
+.font190 {
+  font-size: 190%;
+}
+.font200 {
+  font-size: 200%;
+}
+
+
+.white {
+  color: var(--white);
+}
+
+.vibrant-red {
+  color: var(--vibrant-red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.warm-yellow {
+  color: var(--warm-yellow);
+}
+
+.vc-green {
+  color: var(--vc-green);
+}
+
+.dark-green {
+  color: var(--dark-green);
+}
+
+.mid-green {
+  color: var(--mid-green);
+}
+
+.acid-green {
+  color: var(--acid-green);
+}
+
+.dark-blue {
+  color: var(--bark-blue);
+}
+
+.mid-blue {
+  color: var(--mid-blue);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.mauve-blue {
+  color: var(--mauve-blue);
+}
+
+.dark-warm-grey {
+  color: var(--dark-warm-grey);
+}
+
+.mid-warm-grey {
+  color: var(--mid-warm-grey);
+}
+
+.light-warm-grey {
+  color: var(--light-warm-grey);
+}
+
+.black {
+  color: var(--black);
+}
+
+.mid-cool-grey {
+  color: var(--mid-cool-grey);
+}
+
+.light-cool-grey {
+  color: var(--light-cool-grey);
+}
+
+.digi-gold {
+  color: var(--digi-gold);
+}
+
+.light-digi-gold {
+  color: var(--light-digi-gold);
+}
+
+.magenta {
+  color: var(--magenta);
+}
+
+.bright-yellow {
+  color: var(--bright-yellow);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.royal-blue {
+  color: var(--royal-blue);
+}
+
+.metallic-gold {
+  color: var(--metallic-gold);
+}
+
+.metallic-gold-70p {
+  color: var(--metallic-gold-70p);
+}
+
+.metallic-silver {
+  color: var(--metallic-silver);
+}
+
+.metallic-silver-70p {
+  color: var(--metallic-silver-70p);
+}
+
+.tiny {
+  font-size: var(--size-tiny);
+}
+
+.scriptsize {
+  font-size: var(--size-scriptsize);
+}
+
+.footnotesize {
+  font-size: var(--size-footnotesize);
+}
+
+.small {
+  font-size: var(--size-small);
+}
+
+.normalsize {
+  font-size: var(--size-normalsize);
+}
+
+.large {
+  font-size: var(--size-large);
+}
+
+.Large {
+  font-size: var(--size-Large);
+}
+
+.LARGE {
+  font-size: var(--size-LARGE);
+}
+
+.huge {
+  font-size: var(--size-huge);
+}
+
+.Huge {
+  font-size: var(--size-Huge);
+}
+
+.references {
+  font-size: var(--size-references);
+}
+
+
+
+
+.content-box-blue {
+    background-color: #F0F8FF;
+
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+	background-color: #d9edc2;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+	background-color: #f9dbdb;
+}
+
+.content-box-yellow {
+	background-color: #fef5c4;
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+
+
+
